@@ -258,35 +258,6 @@ def process_mode3(context: str, question: str, node_context_df) -> str:
 
 ---
 
-## Recommendations
-
-### For Production Use
-
-**Recommended: MODE 3 (Integrated)** ⭐
-- **Highest accuracy**: 81.05%
-- **Zero errors**: 100% reliability
-- **Best overall performance**: +7.19% vs baseline
-- **Trade-off**: 3x API calls vs baseline (acceptable for quality gain)
-
-**Alternative: MODE 2 (Prior Knowledge)**
-- **High accuracy**: 79.41% (only -1.64% vs MODE 3)
-- **Minimal overhead**: Same API calls as baseline
-- **Best cost-performance ratio**
-- **Use when**: API quota is limited
-
-**Avoid: MODE 0 (Baseline)**
-- Outdated with no enhancements
-- Lowest accuracy (73.86%)
-
-### For Future Improvements
-
-1. **Test additional domain hints**: Expand prior knowledge statements
-2. **Optimize JSON schema**: Experiment with different structured formats
-3. **Hybrid retrieval**: Combine vector search with graph traversal
-4. **Fine-tune prompts**: A/B test prompt variations for MODE 3
-
----
-
 ## Project Structure
 
 ```
