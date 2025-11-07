@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Data - Backups and Checkpoints
+data/my_results/backups/
+data/my_results/checkpoints/
+*_OLD.csv
+*_backup_before_*.csv
+*_backup_old.csv
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# API Keys (IMPORTANT!)
+**/api_keys.txt
+**/credentials.json
+**/.env
+gpt_config.env
+
+# Cache directories
+cachegpt/
+__pycache__/
+*.pyc
