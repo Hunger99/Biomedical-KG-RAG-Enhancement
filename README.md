@@ -1,5 +1,7 @@
 # KG-RAG (Knowledge Graph-based Retrieval Augmented Generation) in Biomedical Question Answering
 
+**CS 598 JH Course Assignment** - Enhancement of the original [KG-RAG framework](https://github.com/BaranziniLab/KG_RAG) by BaranziniLab.
+
 This project implements and evaluates three enhancement strategies for **KG-RAG** in biomedical question answering using the SPOKE knowledge graph.
 
 ---
@@ -360,9 +362,13 @@ LLM_TEMPERATURE: 0                     # For reproducibility
 
 ---
 
-## Acknowledgments
+## Reference & Acknowledgments
 
-**Framework**: KG-RAG (Knowledge Graph-based Retrieval Augmented Generation)
+This project is based on the original **KG-RAG** framework developed by BaranziniLab:
+- **Original Repository**: [https://github.com/BaranziniLab/KG_RAG](https://github.com/BaranziniLab/KG_RAG)
+- **Paper**: [arXiv:2311.17330](https://arxiv.org/abs/2311.17330)
+
+**Course**: CS 598 JH - Knowledge Graphs and Large Language Models
 **Knowledge Graph**: SPOKE (Scalable Precision Medicine Oriented Knowledge Engine)
 **Dataset**: BiomixQA - Biomedical Multiple Choice Question Answering
 
