@@ -316,50 +316,6 @@ CS-598-JH-Assignment-main/
 
 ---
 
-## About KG-RAG
-
-**KG-RAG** combines explicit knowledge from Knowledge Graphs with implicit knowledge from Large Language Models. It extracts "prompt-aware context" from the SPOKE biomedical knowledge graph - the minimal context sufficient to respond to user prompts.
-
-**SPOKE KG Features:**
-- 27M+ nodes (21 types)
-- 53M+ edges (55 types)
-- Integrates 40+ biomedical repositories
-- Covers genes, proteins, drugs, diseases, and their relationships
-
-**Reference:** [arXiv:2311.17330](https://arxiv.org/abs/2311.17330)
-
----
-
-## Configuration
-
-Key parameters in `config.yaml`:
-
-```yaml
-CONTEXT_VOLUME: 150                    # Number of context sentences
-QUESTION_VS_CONTEXT_SIMILARITY_PERCENTILE_THRESHOLD: 75
-QUESTION_VS_CONTEXT_MINIMUM_SIMILARITY: 0.5
-LLM_TEMPERATURE: 0                     # For reproducibility
-```
-
----
-
-## Troubleshooting
-
-**API Rate Limiting:**
-- Gemini-2.0-flash has daily quota limits
-- Use resume functionality to continue from last checkpoint
-- Checkpoints saved every 50 questions automatically
-
-**Memory Issues:**
-- Reduce `CONTEXT_VOLUME` if running out of memory
-- Process questions in batches using start_index parameter
-
-**Missing Dependencies:**
-- Ensure all packages in `requirements.txt` are installed
-- Check Python version is 3.10.9
-
----
-
 ## Reference & Acknowledgments
 
 This project is based on the original **KG-RAG** framework developed by BaranziniLab:
