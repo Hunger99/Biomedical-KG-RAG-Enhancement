@@ -31,20 +31,10 @@ python -m kg_rag.run_setup
    ```bash
    cp gpt_config.env.example gpt_config.env
    ```
-3. **Edit the config file `gpt_config.env`** (located in project root) and add your API key:
+3. **Edit the config file `gpt_config.env`** and add your API key:
    ```bash
-   # Open the file
-   nano gpt_config.env
-
-   # Replace placeholder with your actual key
    GOOGLE_API_KEY="your-actual-api-key-here"
    ```
-
-**Important**:
-- **Config File Location**: `gpt_config.env` in the project root directory
-- `gpt_config.env` is in `.gitignore` and will NOT be committed to git
-- Never commit your actual API key to the repository
-- All modes (0-3) automatically read the API key from `gpt_config.env` via `config.yaml`
 
 ---
 
