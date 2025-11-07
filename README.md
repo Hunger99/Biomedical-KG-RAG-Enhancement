@@ -145,17 +145,10 @@ MODE 0 (Baseline):    73.86% █████████████████
 ```
 
 ### Key Findings
-
-**Success Points** ✅:
 1. **MODE 3 Best Performance**: 81.05% accuracy - highest among all modes
 2. **All Strategies Improve Baseline**: Even simplest approach (MODE 1) gains +1.30%
 3. **Zero Errors**: All modes achieved 100% reliability (no API failures)
 4. **Synergy Effect**: MODE 3 (JSON+Prior) outperforms MODE 2 (Prior alone) by +1.64%
-
-**Production Recommendation** ⭐:
-- **Use MODE 3** for maximum accuracy (81.05%)
-- **Use MODE 2** if minimizing API calls is critical (same calls as baseline, 79.41% accuracy)
-- **Avoid MODE 0** - outdated baseline with no enhancements
 
 ---
 
